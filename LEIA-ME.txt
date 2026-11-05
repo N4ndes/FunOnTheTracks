@@ -1,0 +1,111 @@
+FUN ON THE TRACKS — SITE
+========================
+
+Abrir o site: faz duplo clique em index.html (funciona sem servidor).
+É preciso internet só para as letras (Google Fonts) e para o mapa da página Contactos.
+
+
+COMO TROCAR AS IMAGENS
+----------------------
+Todas as imagens estão na pasta "imagens" e são pretas com um número.
+Basta substituir o ficheiro por uma foto tua COM O MESMO NOME (ex.: 05.jpg).
+- Tem de ser .jpg. Se a tua imagem for .png, converte-a para .jpg
+  (ou muda "05.jpg" para "05.png" no ficheiro .html correspondente).
+- O tamanho indicado é só uma referência: o site recorta automaticamente,
+  mas fotos com proporção parecida ficam melhor.
+
+N.º  Página       Onde aparece / o que pôr                         Tamanho
+01   Início       Imagem principal (visitantes a divertirem-se)    1500 x 1200
+02   Início       Secção "2 em 1" — o comboio moliceiro            1200 x 900
+03   Início       Cartão Zona Aventura (trampolins)                800 x 600
+04   Início       Cartão Jogos & Lazer (bowling)                   800 x 600
+05   Início       Cartão Escape Rooms                              800 x 600
+06   Início       Cartão Festas & Grupos                           800 x 600
+07   Início       A Moli (mascote) — fica recortada em forma oval  900 x 900
+08   Início       Redes sociais — foto 1                           600 x 600
+09   Início       Redes sociais — foto 2                           600 x 600
+10   Início       Redes sociais — foto 3                           600 x 600
+11   Início       Redes sociais — foto 4                           600 x 600
+12   Início       Redes sociais — foto 5                           600 x 600
+13   Início       Redes sociais — foto 6                           600 x 600
+14   Atividades   Zona Aventura                                    1200 x 900
+15   Atividades   Jogos & Lazer (bowling, snooker, arcades)        1200 x 900
+16   Atividades   Escape room "O Segredo do Moliceiro" (mistério)  1200 x 750
+17   Atividades   Escape room "A Salina Assombrada" (terror)       1200 x 750
+18   Atividades   Festas de aniversário                            1200 x 900
+19   Atividades   Cafetaria                                        1200 x 900
+20   Comboio      Imagem larga do comboio moliceiro                1600 x 700
+21   Comboio      Guia a bordo / prova de ovos moles               1200 x 900
+22   Comboio      Mapa do percurso (vertical)                      1000 x 1250
+23   Sobre nós    A equipa / a história                            1200 x 900
+24   Sobre nós    A Moli (outra pose)                              900 x 900
+25   Reservas     QR code para os hotéis parceiros                 600 x 600
+26   (todas)      Imagem que aparece ao partilhar o site nas       1200 x 630
+                  redes sociais / WhatsApp (não aparece no site)
+
+
+COMO ALTERAR TEXTOS
+-------------------
+Cada texto tem as 3 línguas juntas:
+  <h2 data-en="texto em inglês" data-fr="texto em francês">texto em português</h2>
+Se mudares o português, muda também o data-en e o data-fr.
+O mesmo vale para as imagens: alt (PT), data-en-alt e data-fr-alt.
+O menu e o rodapé estão escritos em cada página (é melhor para o SEO):
+se mudares um link do menu, muda-o nos 8 ficheiros .html.
+As respostas do chat da Moli estão em js/main.js.
+
+
+DADOS INVENTADOS (ajustar se quiserem)
+--------------------------------------
+- Preços, packs e horários (precos.html, comboio.html, contactos.html e js/main.js)
+- Morada, telefone, WhatsApp e email (todos fictícios)
+- Códigos de hotel parceiro aceites na reserva: HOTEL10, RIA10, COSTANOVA10, ARTENOVA10
+- As 3 avaliações da página inicial são exemplos ilustrativos
+
+
+SE O SITE FOR PUBLICADO NUM ENDEREÇO REAL
+----------------------------------------
+Os ficheiros usam o endereço fictício https://www.funonthetracks.pt/
+(no <head> de cada página, em sitemap.xml e em robots.txt).
+Se o publicarem noutro endereço, usem "Localizar e substituir" nesses ficheiros.
+
+
+ACESSIBILIDADE (WCAG 2.2, nível AA)
+-----------------------------------
+- Link "Saltar para o conteúdo" (aparece ao carregar em Tab no início da página).
+- Contraste de cores verificado (texto 4,5:1; botões e contornos 3:1).
+- Foco do teclado bem visível em fundos claros e escuros; tudo funciona só com teclado
+  (Esc fecha o menu e o chat).
+- Títulos por ordem (um H1 por página), regiões (cabeçalho, navegação, conteúdo, rodapé).
+- Textos alternativos nas imagens, traduzidos em PT/EN/FR.
+- Botões só com ícone têm nome para leitores de ecrã; idioma da página atualizado.
+- Formulários com etiquetas, campos obrigatórios assinalados (*) e mensagens anunciadas.
+- Animações desligadas para quem tem "reduzir movimento" ativo no sistema.
+- Auditoria automática com axe-core: 0 problemas em todas as páginas.
+
+
+SEO
+---
+- Título e descrição únicos em cada página, com as palavras-chave do plano
+  ("atividades Aveiro", "sala de jogos", "diversão em Aveiro", "comboio turístico").
+- Versões em inglês e francês com endereço próprio (?lang=en / ?lang=fr) e hreflang.
+- Dados estruturados schema.org: empresa local com horários e morada, perguntas
+  frequentes, percurso do comboio e "migalhas" (breadcrumbs).
+- Open Graph: pré-visualização bonita ao partilhar nas redes (imagem 26).
+- sitemap.xml e robots.txt para os motores de busca.
+- Imagens com tamanho definido e carregamento diferido (site mais rápido).
+  Dica: comprimam as fotos antes de as pôr (idealmente menos de 300 KB cada).
+
+
+PARA DEMONSTRAR À PROFESSORA
+----------------------------
+- Botões PT / EN / FR no topo: o site todo muda de língua.
+  Num browser em inglês ou francês aparece uma sugestão para mudar de língua.
+- Transição entre páginas: ecrã curto com o logótipo e um comboio nos carris.
+- Barra amarela no topo: mostra sempre a próxima campanha do calendário.
+- "Pergunta à Moli" (canto inferior direito): chatbot com respostas automáticas.
+- Reservas: o preço é calculado na hora e aplica o melhor desconto
+  (hotel, aniversário, Dia dos Namorados, Dia da Cidade, Dia do Turismo, Halloween).
+- Simular o QR code de um hotel: abrir reservas.html?parceiro=HOTEL10
+  (há um link para isso na secção "Hotéis parceiros" da página Reservas).
+- Nenhum formulário envia dados: é um site de demonstração.
